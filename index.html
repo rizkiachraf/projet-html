@@ -1,183 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmartBlend Pro — Portable Intelligent Blender</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlendGo Pro - Mixeur Portable Intelligent</title>
+  <meta name="description" content="Découvrez BlendGo Pro, le mixeur portable intelligent. Parfait pour vos smoothies, jus et shakes, où que vous soyez.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div>
-      <a href="#top">
-        <img src="images/smartblend-pro-logo.svg" alt="SmartBlend Pro logo">
+
+  <!-- 1. Header & Navigation -->
+  <header id="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="images/smartblend-pro-logo.svg" alt="Logo BlendGo Pro">
       </a>
-    </div>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-    <div>
-      <a href="#purchase">Buy Now</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#caracteristiques">Caractéristiques</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+      <a href="#commande" class="btn-cta">Acheter maintenant</a>
     </div>
   </header>
 
   <main>
-    <a id="top"></a>
-
-    <section aria-labelledby="hero-title">
-      <header>
-        <h1 id="hero-title">SmartBlend Pro — Blend Anywhere, Smartly</h1>
-      </header>
-      <p>Portable, powerful, and intelligent: SmartBlend Pro learns your preferences and delivers smooth results on the go.</p>
-      <figure>
-        <img src="images/smartblend-pro-main.svg" alt="SmartBlend Pro portable blender on a kitchen counter with fresh fruit">
-        <figcaption>SmartBlend Pro — compact design with powerful performance</figcaption>
-      </figure>
-      <p>
-        <a href="#purchase" role="button">Add to Cart</a>
-      </p>
-    </section>
-
-    <section id="features" aria-labelledby="features-title">
-      <header>
-        <h2 id="features-title">Why SmartBlend Pro?</h2>
-      </header>
-      <div>
-        <article>
-          <figure>
-            <img src="images/icon-usb.svg" alt="USB rechargeable icon">
-            <figcaption>USB Rechargeable</figcaption>
-          </figure>
-          <h3>USB Rechargeable</h3>
-          <p>Charge anywhere with USB-C — up to 12 blends per full charge for uninterrupted convenience.</p>
-        </article>
-
-        <article>
-          <figure>
-            <img src="images/icon-motor.svg" alt="Powerful 6-blade motor icon">
-            <figcaption>6-Blade Motor</figcaption>
-          </figure>
-          <h3>Powerful 6-Blade Motor</h3>
-          <p>High-speed motor and six precision blades crush ice and blend tough ingredients effortlessly.</p>
-        </article>
-
-        <article>
-          <figure>
-            <img src="images/icon-weight.svg" alt="Lightweight and portable icon">
-            <figcaption>Lightweight & Portable</figcaption>
-          </figure>
-          <h3>Lightweight & Portable</h3>
-          <p>Compact, leak-proof design fits in backpacks and gym bags — perfect for travel and outdoor use.</p>
-        </article>
+    <!-- 2. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content fade-in">
+          <h1>Mixez partout, intelligemment avec BlendGo Pro</h1>
+          <p class="subtitle">La puissance d'un mixeur de salon dans un format compact et portable. Parfait pour un mode de vie actif.</p>
+          <p class="price"><span class="old-price">79,99 €</span> <span class="new-price">49,99 €</span></p>
+          <a href="#commande" class="btn-cta btn-large">Ajouter au panier</a>
+        </div>
+        <div class="hero-image slide-in-right">
+          <!-- Utilisant l'image générée réaliste -->
+          <img src="images/blendgo_hero.png" alt="Mixeur portable BlendGo Pro posé sur un comptoir de cuisine, entouré de fruits">
+        </div>
       </div>
     </section>
 
-    <section id="reviews" aria-labelledby="reviews-title">
-      <header>
-        <h2 id="reviews-title">What Customers Say</h2>
-      </header>
+    <!-- 3. Section Caractéristiques -->
+    <section class="features" id="caracteristiques">
+      <div class="container">
+        <h2 class="section-title fade-in">Pourquoi choisir BlendGo Pro ?</h2>
+        <div class="features-grid">
+          <article class="feature-card fade-up" style="transition-delay: 0.1s;">
+            <div class="icon-container">
+              <img src="images/icon-usb.svg" alt="Icône de recharge USB-C">
+            </div>
+            <h3>Recharge Rapide USB-C</h3>
+            <p>Rechargez facilement votre mixeur partout avec un câble USB-C standard. Une charge complète en moins de 2 heures.</p>
+          </article>
+          
+          <article class="feature-card fade-up" style="transition-delay: 0.2s;">
+            <div class="icon-container">
+              <img src="images/icon-motor.svg" alt="Icône de batterie longue durée">
+            </div>
+            <h3>Batterie Longue Durée</h3>
+            <p>Préparez jusqu'à 15 boissons avec une seule charge. L'autonomie idéale pour vos journées les plus intenses.</p>
+          </article>
 
-      <figure>
-        <blockquote>
-          "I take SmartBlend Pro to work every day — smoothies in minutes and it handles frozen fruit like a champ."
-        </blockquote>
-        <figcaption>
-          <strong>★★★★★</strong>
-          <cite>— Aisha K.</cite>
-        </figcaption>
-      </figure>
-
-      <figure>
-        <blockquote>
-          "The battery lasts surprisingly long and cleaning is so easy. Best portable blender I've owned."
-        </blockquote>
-        <figcaption>
-          <strong>★★★★★</strong>
-          <cite>— Daniel R.</cite>
-        </figcaption>
-      </figure>
+          <article class="feature-card fade-up" style="transition-delay: 0.3s;">
+            <div class="icon-container">
+              <img src="images/icon-weight.svg" alt="Icône de nettoyage automatique">
+            </div>
+            <h3>Nettoyage Automatique</h3>
+            <p>Ajoutez de l'eau, une goutte de savon, et mixez ! Le BlendGo Pro se nettoie tout seul en 20 secondes.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="faq" aria-labelledby="faq-title">
-      <header>
-        <h2 id="faq-title">Frequently Asked Questions</h2>
-      </header>
-      <dl>
-        <dt>
-          <h3>How long does the battery last?</h3>
-        </dt>
-        <dd>
-          <p>On a full charge, SmartBlend Pro provides up to 12 single-serve blends, depending on ingredient hardness and usage patterns.</p>
-        </dd>
+    <!-- 4. Section Avis Clients -->
+    <section class="reviews" id="avis">
+      <div class="container">
+        <h2 class="section-title fade-in">Ce que nos clients en pensent</h2>
+        <div class="reviews-grid">
+          <article class="review-card fade-up" style="transition-delay: 0.1s;">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>"Incroyable ! Je l'emmène au bureau tous les jours. Mes smoothies sont prêts en 30 secondes et il mixe même les fruits congelés."</blockquote>
+            <cite>- Sophie L.</cite>
+          </article>
 
-        <dt>
-          <h3>Is it easy to clean?</h3>
-        </dt>
-        <dd>
-          <p>Yes — the jar and blade assembly detach for rinsing. Use warm soapy water and a soft brush for thorough cleaning.</p>
-        </dd>
+          <article class="review-card fade-up" style="transition-delay: 0.2s;">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>"Le nettoyage automatique est une révolution. Plus besoin de frotter le fond, un peu d'eau et c'est propre."</blockquote>
+            <cite>- Thomas M.</cite>
+          </article>
 
-        <dt>
-          <h3>Can it crush ice?</h3>
-        </dt>
-        <dd>
-          <p>SmartBlend Pro's 6-blade motor is designed to crush small ice cubes and frozen fruit; for best results, add liquid and pulse.</p>
-        </dd>
-      </dl>
+          <article class="review-card fade-up" style="transition-delay: 0.3s;">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>"Design élégant et super pratique. La batterie tient vraiment longtemps, je le recharge qu'une fois par semaine."</blockquote>
+            <cite>- Julie R.</cite>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="purchase" aria-labelledby="purchase-title">
-      <header>
-        <h2 id="purchase-title">Get SmartBlend Pro Today</h2>
-      </header>
-      <article>
-        <p>Upgrade your routine with a smart, portable blender that keeps up with your life. Free shipping on orders today.</p>
-        <p><a href="#" aria-label="Buy SmartBlend Pro now">Buy Now</a></p>
-      </article>
-
-      <section id="newsletter" aria-labelledby="newsletter-title">
-        <header>
-          <h2 id="newsletter-title">Join Our Newsletter</h2>
-        </header>
-        <form method="post" action="#" aria-labelledby="newsletter-title">
-          <fieldset>
-            <legend>Subscribe for updates and exclusive offers</legend>
-
-            <div>
-              <label for="newsletter-email">Email address</label>
-              <input type="email" id="newsletter-email" name="email" required placeholder="you@example.com">
+    <!-- 5. Section FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title fade-in">Questions Fréquemment Posées</h2>
+        <div class="faq-accordion fade-up">
+          <article class="faq-item">
+            <h3 class="faq-question">Peut-il mixer des glaçons ou des fruits congelés ? <span class="faq-icon">+</span></h3>
+            <div class="faq-answer">
+              <p>Oui, grâce à ses 6 lames en acier inoxydable et son moteur puissant, BlendGo Pro pulvérise la glace et les fruits congelés sans effort.</p>
             </div>
-
-            <div>
-              <input type="checkbox" id="accept-terms" name="accept" required>
-              <label for="accept-terms">I agree to the terms and conditions</label>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Quelle est la contenance du mixeur ? <span class="faq-icon">+</span></h3>
+            <div class="faq-answer">
+              <p>Le BlendGo Pro a une contenance optimale de 350ml, parfaite pour une portion individuelle.</p>
             </div>
-
-            <div>
-              <button type="submit">Subscribe</button>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Est-ce que le mixeur est bruyant ? <span class="faq-icon">+</span></h3>
+            <div class="faq-answer">
+              <p>Non, notre technologie de réduction de bruit le rend beaucoup plus silencieux qu'un mixeur traditionnel de cuisine.</p>
             </div>
-          </fieldset>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Livrez-vous à l'international ? <span class="faq-icon">+</span></h3>
+            <div class="faq-answer">
+              <p>Oui, nous offrons la livraison gratuite dans le monde entier avec un suivi de colis en temps réel.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Section CTA Finale -->
+    <section class="cta-finale" id="commande">
+      <div class="container fade-in cta-finale-container">
+        <div class="cta-image">
+          <img src="images/blendgo_lifestyle.png" alt="Utilisation du mixeur BlendGo Pro en extérieur pour un style de vie sain" style="border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+        </div>
+        <div class="cta-content">
+          <h2>Prêt à révolutionner vos boissons ?</h2>
+          <p>Rejoignez plus de 10 000 clients satisfaits. Commandez aujourd'hui et profitez de la livraison gratuite !</p>
+          <a href="#" class="btn-cta btn-large pulse-animation">Commander maintenant</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <div class="container fade-up">
+        <h2>Restez informés</h2>
+        <p>Abonnez-vous à notre newsletter pour recevoir nos recettes exclusives et offres spéciales.</p>
+        <form id="newsletter-form" novalidate>
+          <div class="form-group">
+            <label for="email" class="sr-only" style="display:none;">Adresse email</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+            <span class="error-message" id="email-error">Veuillez entrer une adresse email valide.</span>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <label for="rgpd">J'accepte les conditions d'utilisation et la politique de confidentialité.</label>
+          </div>
+          <span class="error-message" id="checkbox-error" style="margin-left: 2rem; margin-bottom: 1rem;">Vous devez accepter les conditions.</span>
+          <button type="submit" class="btn-cta">S'abonner</button>
+          <div class="success-message" id="form-success">Merci pour votre inscription !</div>
         </form>
-      </section>
+      </div>
     </section>
   </main>
 
+  <!-- 8. Footer -->
   <footer>
-    <small>© 2026 SmartBlend Pro. All rights reserved.</small>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <address id="contact">
-      Contact us at <a href="mailto:support@smartblendpro.example">support@smartblendpro.example</a>
-    </address>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p>&copy; 2026 BlendGo Pro. Tous droits réservés.</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <ul>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="mailto:contact@blendgopro.example">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
