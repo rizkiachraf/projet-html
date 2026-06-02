@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="usbTitle">
+  <title id="usbTitle">USB rechargeable icon</title>
+  <rect x="16" y="12" width="32" height="28" rx="4" fill="#fff" stroke="#000"/>
+  <rect x="28" y="8" width="8" height="6" fill="#000"/>
+  <text x="32" y="44" text-anchor="middle" font-size="10" font-family="Arial">USB</text>
+</svg>

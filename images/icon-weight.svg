@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="weightTitle">
+  <title id="weightTitle">Lightweight and portable icon</title>
+  <circle cx="32" cy="24" r="10" fill="#fff" stroke="#000"/>
+  <rect x="18" y="36" width="28" height="10" rx="2" fill="#fff" stroke="#000"/>
+  <text x="32" y="44" text-anchor="middle" font-size="8" font-family="Arial">Light</text>
+</svg>
