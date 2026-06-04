@@ -133,4 +133,37 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach(element => {
     observer.observe(element);
   });
+
+  // 6. Theme Toggle Logic (Dark/Light)
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeIconSun = document.getElementById('theme-icon-sun');
+  const themeIconMoon = document.getElementById('theme-icon-moon');
+  const htmlElement = document.documentElement;
+
+  // Retrieve saved theme or default to dark
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  
+  const applyTheme = (theme) => {
+    htmlElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    
+    if (theme === 'light') {
+      themeIconSun.style.display = 'none';
+      themeIconMoon.style.display = 'block';
+    } else {
+      themeIconSun.style.display = 'block';
+      themeIconMoon.style.display = 'none';
+    }
+  };
+
+  // Initial application
+  applyTheme(currentTheme);
+
+  // Toggle on click
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+  }
 });

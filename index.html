@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlendGo Pro - Mixeur Portable Intelligent</title>
   <meta name="description" content="Découvrez BlendGo Pro, le mixeur portable intelligent. Parfait pour vos smoothies, jus et shakes, où que vous soyez.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- 1. Header & Navigation -->
   <header id="main-header">
-    <div class="container header-container">
-      <a href="#" class="logo">
-        <img src="images/smartblend-pro-logo.svg" alt="Logo BlendGo Pro">
-      </a>
-      <nav aria-label="Navigation principale">
-        <ul class="nav-links">
-          <li><a href="#caracteristiques">Caractéristiques</a></li>
-          <li><a href="#avis">Avis</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-        </ul>
-      </nav>
-      <a href="#commande" class="btn-cta">Acheter maintenant</a>
-    </div>
+    <a href="#" class="logo">
+      <img src="images/smartblend-pro-logo.svg" alt="Logo BlendGo Pro" onerror="this.src='https://placehold.co/120x40/0f172a/FFF?text=BlendGo+Pro'">
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="#caracteristiques">Caractéristiques</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème" title="Basculer le thème">
+            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <a href="#commande" class="btn-cta">Acheter</a>
   </header>
 
   <main>
@@ -33,14 +35,26 @@
     <section class="hero" id="hero">
       <div class="container hero-container">
         <div class="hero-content fade-in">
-          <h1>Mixez partout, intelligemment avec BlendGo Pro</h1>
+          <h1>Mixez partout, <br>intelligemment.</h1>
           <p class="subtitle">La puissance d'un mixeur de salon dans un format compact et portable. Parfait pour un mode de vie actif.</p>
-          <p class="price"><span class="old-price">79,99 €</span> <span class="new-price">49,99 €</span></p>
-          <a href="#commande" class="btn-cta btn-large">Ajouter au panier</a>
+          <div class="price-container">
+            <span class="old-price">79,99 €</span>
+            <span class="new-price">49,99 €</span>
+          </div>
+          <a href="#commande" class="btn-cta btn-large pulse-animation">Ajouter au panier</a>
         </div>
         <div class="hero-image slide-in-right">
-          <!-- Utilisant l'image générée réaliste -->
-          <img src="images/blendgo_hero.png" alt="Mixeur portable BlendGo Pro posé sur un comptoir de cuisine, entouré de fruits">
+          <img src="images/blendgo_hero.png" alt="Mixeur portable BlendGo Pro">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 Image Section -->
+    <section class="product-video" id="photo">
+      <div class="container fade-up">
+        <h2 class="section-title">Le mixeur en détail</h2>
+        <div class="video-container">
+          <img src="images/aura_blender.jpg" alt="Mixeur AURA" onerror="this.src='images/blendgo_lifestyle.png'" style="width: 100%; height: auto; border-radius: 16px; display: block; object-fit: cover;">
         </div>
       </div>
     </section>
@@ -52,15 +66,15 @@
         <div class="features-grid">
           <article class="feature-card fade-up" style="transition-delay: 0.1s;">
             <div class="icon-container">
-              <img src="images/icon-usb.svg" alt="Icône de recharge USB-C">
+              <img src="images/icon-usb.svg" alt="Recharge USB-C">
             </div>
             <h3>Recharge Rapide USB-C</h3>
-            <p>Rechargez facilement votre mixeur partout avec un câble USB-C standard. Une charge complète en moins de 2 heures.</p>
+            <p>Rechargez facilement votre mixeur partout avec un câble standard. Une charge complète en moins de 2 heures.</p>
           </article>
           
           <article class="feature-card fade-up" style="transition-delay: 0.2s;">
             <div class="icon-container">
-              <img src="images/icon-motor.svg" alt="Icône de batterie longue durée">
+              <img src="images/icon-motor.svg" alt="Batterie">
             </div>
             <h3>Batterie Longue Durée</h3>
             <p>Préparez jusqu'à 15 boissons avec une seule charge. L'autonomie idéale pour vos journées les plus intenses.</p>
@@ -68,7 +82,7 @@
 
           <article class="feature-card fade-up" style="transition-delay: 0.3s;">
             <div class="icon-container">
-              <img src="images/icon-weight.svg" alt="Icône de nettoyage automatique">
+              <img src="images/icon-weight.svg" alt="Nettoyage">
             </div>
             <h3>Nettoyage Automatique</h3>
             <p>Ajoutez de l'eau, une goutte de savon, et mixez ! Le BlendGo Pro se nettoie tout seul en 20 secondes.</p>
@@ -80,24 +94,24 @@
     <!-- 4. Section Avis Clients -->
     <section class="reviews" id="avis">
       <div class="container">
-        <h2 class="section-title fade-in">Ce que nos clients en pensent</h2>
+        <h2 class="section-title fade-in">Ils l'adorent</h2>
         <div class="reviews-grid">
           <article class="review-card fade-up" style="transition-delay: 0.1s;">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars">★★★★★</div>
             <blockquote>"Incroyable ! Je l'emmène au bureau tous les jours. Mes smoothies sont prêts en 30 secondes et il mixe même les fruits congelés."</blockquote>
-            <cite>- Sophie L.</cite>
+            <cite>Sophie L.</cite>
           </article>
 
           <article class="review-card fade-up" style="transition-delay: 0.2s;">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars">★★★★★</div>
             <blockquote>"Le nettoyage automatique est une révolution. Plus besoin de frotter le fond, un peu d'eau et c'est propre."</blockquote>
-            <cite>- Thomas M.</cite>
+            <cite>Thomas M.</cite>
           </article>
 
           <article class="review-card fade-up" style="transition-delay: 0.3s;">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="stars">★★★★★</div>
             <blockquote>"Design élégant et super pratique. La batterie tient vraiment longtemps, je le recharge qu'une fois par semaine."</blockquote>
-            <cite>- Julie R.</cite>
+            <cite>Julie R.</cite>
           </article>
         </div>
       </div>
@@ -109,25 +123,25 @@
         <h2 class="section-title fade-in">Questions Fréquemment Posées</h2>
         <div class="faq-accordion fade-up">
           <article class="faq-item">
-            <h3 class="faq-question">Peut-il mixer des glaçons ou des fruits congelés ? <span class="faq-icon">+</span></h3>
+            <div class="faq-question">Peut-il mixer des glaçons ou des fruits congelés ? <span class="faq-icon">+</span></div>
             <div class="faq-answer">
               <p>Oui, grâce à ses 6 lames en acier inoxydable et son moteur puissant, BlendGo Pro pulvérise la glace et les fruits congelés sans effort.</p>
             </div>
           </article>
           <article class="faq-item">
-            <h3 class="faq-question">Quelle est la contenance du mixeur ? <span class="faq-icon">+</span></h3>
+            <div class="faq-question">Quelle est la contenance du mixeur ? <span class="faq-icon">+</span></div>
             <div class="faq-answer">
               <p>Le BlendGo Pro a une contenance optimale de 350ml, parfaite pour une portion individuelle.</p>
             </div>
           </article>
           <article class="faq-item">
-            <h3 class="faq-question">Est-ce que le mixeur est bruyant ? <span class="faq-icon">+</span></h3>
+            <div class="faq-question">Est-ce que le mixeur est bruyant ? <span class="faq-icon">+</span></div>
             <div class="faq-answer">
               <p>Non, notre technologie de réduction de bruit le rend beaucoup plus silencieux qu'un mixeur traditionnel de cuisine.</p>
             </div>
           </article>
           <article class="faq-item">
-            <h3 class="faq-question">Livrez-vous à l'international ? <span class="faq-icon">+</span></h3>
+            <div class="faq-question">Livrez-vous à l'international ? <span class="faq-icon">+</span></div>
             <div class="faq-answer">
               <p>Oui, nous offrons la livraison gratuite dans le monde entier avec un suivi de colis en temps réel.</p>
             </div>
@@ -138,37 +152,37 @@
 
     <!-- 6. Section CTA Finale -->
     <section class="cta-finale" id="commande">
-      <div class="container fade-in cta-finale-container">
+      <div class="cta-finale-container fade-in">
         <div class="cta-image">
-          <img src="images/blendgo_lifestyle.png" alt="Utilisation du mixeur BlendGo Pro en extérieur pour un style de vie sain" style="border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+          <img src="images/blendgo_lifestyle.png" alt="Utilisation du mixeur BlendGo Pro">
         </div>
-        <div class="cta-content">
-          <h2>Prêt à révolutionner vos boissons ?</h2>
-          <p>Rejoignez plus de 10 000 clients satisfaits. Commandez aujourd'hui et profitez de la livraison gratuite !</p>
-          <a href="#" class="btn-cta btn-large pulse-animation">Commander maintenant</a>
-        </div>
+        <h2>Prêt à révolutionner vos boissons ?</h2>
+        <p>Rejoignez plus de 10 000 clients satisfaits. Commandez aujourd'hui et profitez de la livraison gratuite !</p>
+        <a href="#" class="btn-cta btn-large pulse-animation">Commander maintenant</a>
       </div>
     </section>
 
     <!-- 7. Newsletter -->
     <section class="newsletter" id="newsletter">
       <div class="container fade-up">
-        <h2>Restez informés</h2>
-        <p>Abonnez-vous à notre newsletter pour recevoir nos recettes exclusives et offres spéciales.</p>
-        <form id="newsletter-form" novalidate>
-          <div class="form-group">
-            <label for="email" class="sr-only" style="display:none;">Adresse email</label>
-            <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+        <div class="newsletter-container">
+          <h2>Restez informés</h2>
+          <p>Abonnez-vous à notre newsletter pour recevoir nos recettes exclusives et offres spéciales.</p>
+          <form id="newsletter-form" novalidate>
+            <div class="form-group">
+              <label for="email" class="sr-only" style="display:none;">Adresse email</label>
+              <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="rgpd" name="rgpd" required>
+              <label for="rgpd">J'accepte les conditions d'utilisation et la politique de confidentialité.</label>
+            </div>
             <span class="error-message" id="email-error">Veuillez entrer une adresse email valide.</span>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" id="rgpd" name="rgpd" required>
-            <label for="rgpd">J'accepte les conditions d'utilisation et la politique de confidentialité.</label>
-          </div>
-          <span class="error-message" id="checkbox-error" style="margin-left: 2rem; margin-bottom: 1rem;">Vous devez accepter les conditions.</span>
-          <button type="submit" class="btn-cta">S'abonner</button>
-          <div class="success-message" id="form-success">Merci pour votre inscription !</div>
-        </form>
+            <span class="error-message" id="checkbox-error">Vous devez accepter les conditions.</span>
+            <button type="submit" class="btn-cta">S'abonner</button>
+            <div class="success-message" id="form-success">Merci pour votre inscription !</div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -181,8 +195,8 @@
       </div>
       <nav aria-label="Liens du pied de page">
         <ul>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Confidentialité</a></li>
+          <li><a href="#">Conditions</a></li>
           <li><a href="mailto:contact@blendgopro.example">Contact</a></li>
         </ul>
       </nav>
